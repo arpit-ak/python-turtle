@@ -1,0 +1,25 @@
+import turtle
+
+t = turtle.Turtle()
+s = turtle.Screen()
+s.bgcolor("gold")
+t.speed(0)
+t.goto(0,-225)
+t.pendown()
+t.color("black")
+t.begin_fill()
+t.circle(225)
+t.end_fill()
+t.penup()
+t.goto(0,0)
+t.pendown()
+t.color("gold")
+t.begin_fill()
+for i in range(3):
+    t.right(120)
+    for i in range(3):
+        t.forward(200)
+        t.right(120)
+t.end_fill()
+t.hideturtle()
+turtle.done()
